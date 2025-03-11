@@ -1,11 +1,11 @@
+'use client'
+
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import Link from "next/link"
 
-export default function LoginForm({
-  className,
-  ...props
-}: React.ComponentProps<"div">) {
+export default function LoginForm() {
   return (
     <>
         <form className="p-6 md:p-8 ">
@@ -37,9 +37,9 @@ export default function LoginForm({
                 
                 <div className="text-center text-sm">
                     Don&apos;t have an account?{" "}
-                    <a href="#" className="underline underline-offset-4">
+                    <Link href="/register" className="underline underline-offset-4">
                     Sign up
-                    </a>
+                    </Link>
                 </div>
                 </div>
             </form>

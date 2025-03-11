@@ -1,0 +1,230 @@
+{
+  "global": {
+      "search": "Pesquisar",
+      "pagination": {
+          "previous": "Anterior",
+          "next": "Próximo"
+      },
+      "filters": {
+          "title": "Filtros",
+          "description": "Use os filtros para encontrar as empresas que atendam às suas necessidades.",
+          "price": "Preço",
+          "name": "Nome",
+          "category": "Categoria",
+          "date": "Data",
+          "type": "Tipo",
+          "location": "Localização",
+          "status": "Status",
+          "industry": "Indústria",
+          "verified": "Empresas verificadas"
+      },
+      "filtersPlaceholder": {
+          "price": "Selecione a faixa de preço",
+          "name": "Pesquisar por nome",
+          "category": "Selecionar categoria",
+          "date": "Selecionar intervalo de datas",
+          "type": "Selecionar tipo",
+          "location": "Selecionar localização"
+      },
+      "filtersLabel": {
+          "price": "Faixa de preço",
+          "name": "Nome",
+          "category": "Categoria",
+          "date": "Intervalo de datas",
+          "type": "Tipo",
+          "location": "Localização"
+      },
+      "button": {
+          "apply": "Aplicar",
+          "clear": "Limpar",
+          "cancel": "Cancelar",
+          "close": "Fechar",
+          "create": "Criar",
+          "save": "Salvar",
+          "edit": "Editar",
+          "delete": "Excluir",
+          "remove": "Remover",
+          "add": "Adicionar",
+          "back": "Voltar",
+          "send": "Enviar",
+          "reset": "Redefinir",
+          "search": "Pesquisar",
+          "filter": "Filtrar",
+          "registerCompany": "Registrar Empresa",
+          "registerService": "Registrar Serviço",
+          "registerSontest": "Registrar Concurso",
+          "registerSequest": "Registrar Pedido",
+          "registerJob": "Registrar Trabalho",
+          "registerTask": "Registrar Tarefa",
+          "signIn": "Entrar",
+          "signUp": "Cadastrar-se",
+          "signOut": "Sair",
+          "editProfile": "Editar Perfil",
+          "editCompany": "Editar perfil da empresa",
+          "changePassword": "Alterar Senha",
+          "sendMessage": "Enviar Mensagem",
+          "seeAll": "Ver Tudo",
+          "seeLess": "Ver Menos",
+          "seeMore": "Ver Mais",
+          "seeDetails": "Ver Detalhes"
+      },
+      "status": {
+          "success": "Sucesso",
+          "error": "Erro",
+          "warning": "Aviso",
+          "info": "Informação"
+      },
+      "error": {
+          "notFound": "Não Encontrado",
+          "serverError": "Erro no Servidor",
+          "unknown": "Erro Desconhecido"
+      },
+      "language": {
+            "en": "English",
+            "pt": "Português",
+            "title": "Idioma",
+            "description": "Altere o idioma da aplicação.",
+            "button": "Alterar Idioma"
+        }
+  },
+  "auth": {
+      "login": {
+          "title": "Entrar",
+          "email": "E-mail",
+          "password": "Senha",
+          "forgotPassword": "Esqueceu a senha?",
+          "or": "ou"
+      },
+      "register": {
+          "title": "Cadastrar-se",
+          "name": "Nome",
+          "email": "E-mail",
+          "password": "Senha",
+          "confirmPassword": "Confirmar Senha"
+      },
+      "forgotPassword": {
+          "title": "Esqueci a Senha",
+          "email": "E-mail",
+          "submit": "Enviar",
+          "success": "Verifique seu e-mail para instruções sobre como redefinir sua senha."
+      },
+      "resetPassword": {
+          "title": "Redefinir Senha",
+          "email": "E-mail",
+          "submit": "Enviar",
+          "success": "Verifique seu e-mail para instruções sobre como redefinir sua senha.",
+          "error": "O endereço de e-mail não está associado a nenhuma conta."
+      },
+      "verifyEmail": {
+          "success": "Verifique seu e-mail para instruções sobre como verificar seu endereço de e-mail."
+      },
+      "changePassword": {
+          "title": "Alterar Senha",
+          "currentPassword": "Senha Atual",
+          "newPassword": "Nova Senha",
+          "confirmNewPassword": "Confirmar Nova Senha",
+          "changePassword": "Alterar Senha",
+          "success": "Senha alterada com sucesso.",
+          "error": "A senha não pôde ser alterada. Por favor, tente novamente."
+      }
+  },
+  "public": {
+      "header": {
+          "home": "Início",
+          "companies": "Empresas",
+          "services": "Serviços",
+          "contests": "Concursos",
+          "requests": "Pedidos",
+          "jobs": "Trabalhos",
+          "tasks": "Tarefas"
+      },
+      "footer": {
+          "about": "Sobre",
+          "contact": "Contato",
+          "privacy": "Privacidade",
+          "terms": "Termos",
+          "help": "Ajuda",
+          "blog": "Blog",
+          "faq": "FAQ",
+          "login": "Entrar",
+          "register": "Cadastrar-se",
+          "logout": "Sair"
+      },
+      "home": {
+          "title": "Início",
+          "description": "Encontre aqui a empresa perfeita que atenda às suas necessidades."
+      },
+      "companies": {
+          "title": "Empresas",
+          "description": "Encontre aqui a empresa perfeita que atenda às suas necessidades."
+      },
+      "services": {
+          "title": "Serviços",
+          "description": "Encontre aqui o serviço perfeito que atenda às suas necessidades."
+      },
+      "contests": {
+          "title": "Solicitações",
+          "description": "Encontre aqui o concurso perfeito que atenda às suas necessidades."
+      },
+      "requests": {},
+      "jobs": {},
+      "tasks": {},
+      "contact": {},
+      "privacy": {},
+      "terms": {},
+      "help": {},
+      "blog": {},
+      "faq": {},
+      "login": {},
+      "register": {}
+  },
+  "dashboard":{
+      "title": "Painel de Controle",
+      "welcome": "Bem-vindo de volta, ",
+      "home": {},
+      "tasks": {
+          "title": "Gestão de Tarefas"
+      },
+      "files": {
+          "title": "Gestão de Arquivos"
+      },
+      "agenda": {
+          "title": "Agenda"
+      },
+      "contacts": {
+          "title": "Contatos"
+      },
+      "contests": {
+          "title": "Concursos",
+          "all": "Todos",
+          "pending": "Pendente",
+          "approved": "Aprovado",
+          "rejected": "Rejeitado",
+          "accepted": "Aceito",
+          "cancelled": "Cancelado",
+          "completed": "Concluído",
+          "declined": "Recusado",
+          "create": "Criar"
+      },
+      "requests": {
+          "title": "Pedidos",
+          "all": "Todos",
+          "pending": "Pendente",
+          "approved": "Aprovado",
+          "rejected": "Rejeitado",
+          "accepted": "Aceito",
+          "cancelled": "Cancelado",
+          "completed": "Concluído",
+          "declined": "Recusado"
+      },
+      "settings": {
+          "title": "Configurações",
+          "profile": {
+              "title": "Perfil"
+          },
+          "account": {
+              "title": "Conta da Empresa"
+          }
+      }
+  }
+}

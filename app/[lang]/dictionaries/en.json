@@ -1,0 +1,230 @@
+{
+    "global": {
+        "search": "Search",
+        "pagination": {
+            "previous": "Previous",
+            "next": "Next"
+        },
+        "filters": {
+            "title": "Filters",
+            "description": "Filters are used to find the companies that fit your needs.",
+            "price": "Price",
+            "name": "Name",
+            "category": "Category",
+            "date": "Date",
+            "type": "Type",
+            "location": "Location",
+            "status": "Status",
+            "industry": "Industry",
+            "verified": "Verified companies"
+        },
+        "filtersPlaceholder": {
+            "price": "Select Price Range",
+            "name": "Search by Name",
+            "category": "Select Category",
+            "date": "Select Date Range",
+            "type": "Select Type",
+            "location": "Select Location"
+        },
+        "filtersLabel": {
+            "price": "Price Range",
+            "name": "Name",
+            "category": "Category",
+            "date": "Date Range",
+            "type": "Type",
+            "location": "Location"
+        },
+        "button": {
+            "apply": "Apply",
+            "clear": "Clear",
+            "cancel": "Cancel",
+            "close": "Close",
+            "create": "Create",
+            "save": "Save",
+            "edit": "Edit",
+            "delete": "Delete",
+            "remove": "Remove",
+            "add": "Add",
+            "back": "Back",
+            "send": "Send",
+            "reset": "Reset",
+            "search": "Search",
+            "filter": "Filter",
+            "registerCompany": "Register Company",
+            "registerService": "Register Service",
+            "registerSontest": "Register Contest",
+            "registerSequest": "Register Request",
+            "registerJob": "Register Job",
+            "registerTask": "Register Task",
+            "signIn": "Sign In",
+            "signUp": "Sign Up",
+            "signOut": "Sign Out",
+            "editProfile": "Edit Profile",
+            "editCompany": "Edit profile company",
+            "changePassword": "Change Password",
+            "sendMessage": "Send Message",
+            "seeAll": "See All",
+            "seeLess": "See Less",
+            "seeMore": "See More",
+            "seeDetails": "See Details"
+        },
+        "status": {
+            "success": "Success",
+            "error": "Error",
+            "warning": "Warning",
+            "info": "Info"
+        },
+        "error": {
+            "notFound": "Not Found",
+            "serverError": "Server Error",
+            "unknown": "Unknown Error"
+        },
+        "language": {
+            "en": "English",
+            "pt": "Português",
+            "title": "Language",
+            "description": "Change the language of the application.",
+            "button": "Change Language"
+        }
+    },
+    "auth": {
+        "login": {
+            "title": "Login",
+            "email": "Email",
+            "password": "Password",
+            "forgotPassword": "Forgot Password?",
+            "or": "or"
+        },
+        "register": {
+            "title": "Register",
+            "name": "Name",
+            "email": "Email",
+            "password": "Password",
+            "confirmPassword": "Confirm Password"
+        },
+        "forgotPassword": {
+            "title": "Forgot Password",
+            "email": "Email",
+            "submit": "Submit",
+            "success": "Check your email for instructions on how to reset your password."
+        },
+        "resetPassword": {
+            "title": "Reset Password",
+            "email": "Email",
+            "submit": "Submit",
+            "success": "Check your email for instructions on how to reset your password.",
+            "error": "The email address is not associated with any account."
+        },
+        "verifyEmail": {
+            "success": "Check your email for instructions on how to verify your email address."
+        },
+        "changePassword": {
+            "title": "Change Password",
+            "currentPassword": "Current Password",
+            "newPassword": "New Password",
+            "confirmNewPassword": "Confirm New Password",
+            "changePassword": "Change Password",
+            "success": "Password changed successfully.",
+            "error": "The password could not be changed. Please try again."
+        }
+    },
+    "public": {
+        "header": {
+            "home": "Home",
+            "companies": "Companies",
+            "services": "Services",
+            "contests": "Contests",
+            "requests": "Requests",
+            "jobs": "Jobs",
+            "tasks": "Tasks"
+        },
+        "footer": {
+            "about": "About",
+            "contact": "Contact",
+            "privacy": "Privacy",
+            "terms": "Terms",
+            "help": "Help",
+            "blog": "Blog",
+            "faq": "FAQ",
+            "login": "Login",
+            "register": "Register",
+            "logout": "Logout"
+        },
+        "home": {
+            "title": "Home",
+            "description": "Find here the perfect company that fit your needs."
+        },
+        "companies": {
+            "title": "Companies",
+            "description": "Find here the perfect company that fit your needs."
+        },
+        "services": {
+            "title": "Services",
+            "description": "Find here the perfect service that fit your needs."
+        },
+        "contests": {
+            "title": "Contests",
+            "description": "Find here the perfect contest that fit your needs."
+        },
+        "requests": {},
+        "jobs": {},
+        "tasks": {},
+        "contact": {},
+        "privacy": {},
+        "terms": {},
+        "help": {},
+        "blog": {},
+        "faq": {},
+        "login": {},
+        "register": {}
+    },
+    "dashboard":{
+        "title": "Dashboard",
+        "welcome": "Welcome back, ",
+        "home": {},
+        "tasks": {
+            "title": "Tasks Management"
+        },
+        "files": {
+            "title": "Files Management"
+        },
+        "agenda": {
+            "title": "Agenda"
+        },
+        "contacts": {
+            "title": "Contacts"
+        },
+        "contests": {
+            "title": "Contests",
+            "all": "All",
+            "pending": "Pending",
+            "approved": "Approved",
+            "rejected": "Rejected",
+            "accepted": "Accepted",
+            "cancelled": "Cancelled",
+            "completed": "Completed",
+            "declined": "Declined",
+            "create": "Create"
+        },
+        "requests": {
+            "title": "Requests",
+            "all": "All",
+            "pending": "Pending",
+            "approved": "Approved",
+            "rejected": "Rejected",
+            "accepted": "Accepted",
+            "cancelled": "Cancelled",
+            "completed": "Completed",
+            "declined": "Declined"
+        },
+        "settings": {
+            "title": "Settings",
+            "profile": {
+                "title": "Profile"
+            },
+            "account": {
+                "title": "Company Account"
+            }
+        }
+    }
+}

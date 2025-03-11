@@ -226,7 +226,7 @@ export function MainNav() {
             <div className="mb-6">
               <h2 className="px-3 text-xs font-semibold text-gray-500 mb-2">SETTINGS</h2>
               <div className="space-y-1">
-                <Link href="/mail/settings">
+                <Link href="/settings">
                   <span className="flex items-center rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:border hover:border-gray-200">
                     <Settings className="mr-3 h-4 w-4" />
                     Settings
