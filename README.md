@@ -1,4 +1,4 @@
-# Email Client Project
+# Workmail
 
 ## Overview
 This project is a comprehensive email client designed to facilitate seamless and efficient email management. The email client provides real-time email reading using IMAPFlow and integrates Tailwind CSS for a sleek and responsive user interface.
