@@ -39,6 +39,7 @@ model User {
   lastName       String?
   name           String?
   email          String?         @unique
+  password       String
   createdAt      DateTime        @default(now()) @map("createAt")
   image          String?
   accounts       Account[]

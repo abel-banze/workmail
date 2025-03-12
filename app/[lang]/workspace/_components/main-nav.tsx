@@ -20,6 +20,14 @@ import {
   Mail,
   ChevronDown,
   PenSquare,
+  Users,
+  Calendar,
+  Phone,
+  CheckSquare,
+  Clock,
+  UserCircle,
+  Building,
+  Briefcase,
 } from "lucide-react"
 import {
   DropdownMenu,
@@ -29,6 +37,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { ComposeDialog } from "./compose-dialog"
 
 const mailFolders = [
@@ -96,6 +105,52 @@ const mailLabels = [
   },
 ]
 
+const contactsItems = [
+  {
+    title: "All Contacts",
+    icon: Users,
+    href: "/contacts",
+  },
+  {
+    title: "Personal",
+    icon: UserCircle,
+    href: "/contacts/personal",
+  },
+  {
+    title: "Business",
+    icon: Building,
+    href: "/contacts/business",
+  },
+  {
+    title: "Colleagues",
+    icon: Briefcase,
+    href: "/contacts/colleagues",
+  },
+]
+
+const appsItems = [
+  {
+    title: "Calendar",
+    icon: Calendar,
+    href: "/apps/calendar",
+  },
+  {
+    title: "Tasks",
+    icon: CheckSquare,
+    href: "/apps/tasks",
+  },
+  {
+    title: "Meetings",
+    icon: Clock,
+    href: "/apps/meetings",
+  },
+  {
+    title: "Calls",
+    icon: Phone,
+    href: "/apps/calls",
+  },
+]
+
 const accounts = [
   {
     name: "John Doe",
@@ -118,6 +173,20 @@ export function MainNav() {
   const pathname = usePathname()
   const [currentAccount, setCurrentAccount] = useState(accounts[0])
   const [isComposeOpen, setIsComposeOpen] = useState(false)
+  const [openSections, setOpenSections] = useState<any>({
+    messages: true,
+    contacts: false,
+    apps: false,
+    labels: false,
+    settings: false,
+  })
+
+  const toggleSection = (section: string) => {
+    setOpenSections({
+      ...openSections,
+      [section]: !openSections[section],
+    })
+  }
 
   return (
     <>
@@ -185,9 +254,18 @@ export function MainNav() {
 
         <ScrollArea className="flex-1 overflow-y-auto">
           <div className="p-3">
-            <div className="mb-6">
-              <h2 className="px-3 text-xs font-semibold text-gray-500 mb-2">FOLDERS</h2>
-              <div className="space-y-1">
+            {/* Messages Section */}
+            <Collapsible open={openSections.messages} onOpenChange={() => toggleSection("messages")} className="mb-2">
+              <CollapsibleTrigger className="flex items-center justify-between w-full px-3 py-2 text-xs font-semibold text-gray-500">
+                <span>MESSAGES</span>
+                <ChevronDown
+                  className={cn(
+                    "h-4 w-4 transition-transform duration-200",
+                    openSections.messages ? "transform rotate-180" : "",
+                  )}
+                />
+              </CollapsibleTrigger>
+              <CollapsibleContent className="space-y-1 mt-2">
                 {mailFolders.map((folder) => (
                   <Link key={folder.href} href={folder.href}>
                     <span
@@ -206,12 +284,67 @@ export function MainNav() {
                     </span>
                   </Link>
                 ))}
-              </div>
-            </div>
+              </CollapsibleContent>
+            </Collapsible>
 
-            <div className="mb-6">
-              <h2 className="px-3 text-xs font-semibold text-gray-500 mb-2">LABELS</h2>
-              <div className="space-y-1">
+            {/* Contacts Section */}
+            <Collapsible open={openSections.contacts} onOpenChange={() => toggleSection("contacts")} className="mb-2">
+              <CollapsibleTrigger className="flex items-center justify-between w-full px-3 py-2 text-xs font-semibold text-gray-500">
+                <span>CONTACTS</span>
+                <ChevronDown
+                  className={cn(
+                    "h-4 w-4 transition-transform duration-200",
+                    openSections.contacts ? "transform rotate-180" : "",
+                  )}
+                />
+              </CollapsibleTrigger>
+              <CollapsibleContent className="space-y-1 mt-2">
+                {contactsItems.map((item) => (
+                  <Link key={item.href} href={item.href}>
+                    <span className="flex items-center rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:border hover:border-gray-200">
+                      <item.icon className="mr-3 h-4 w-4" />
+                      {item.title}
+                    </span>
+                  </Link>
+                ))}
+              </CollapsibleContent>
+            </Collapsible>
+
+            {/* Apps Section */}
+            <Collapsible open={openSections.apps} onOpenChange={() => toggleSection("apps")} className="mb-2">
+              <CollapsibleTrigger className="flex items-center justify-between w-full px-3 py-2 text-xs font-semibold text-gray-500">
+                <span>APPS</span>
+                <ChevronDown
+                  className={cn(
+                    "h-4 w-4 transition-transform duration-200",
+                    openSections.apps ? "transform rotate-180" : "",
+                  )}
+                />
+              </CollapsibleTrigger>
+              <CollapsibleContent className="space-y-1 mt-2">
+                {appsItems.map((item) => (
+                  <Link key={item.href} href={item.href}>
+                    <span className="flex items-center rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:border hover:border-gray-200">
+                      <item.icon className="mr-3 h-4 w-4" />
+                      {item.title}
+                    </span>
+                  </Link>
+                ))}
+              </CollapsibleContent>
+            </Collapsible>
+
+            {/* Labels Section */}
+            <Collapsible open={openSections.labels} onOpenChange={() => toggleSection("labels")} className="mb-2">
+              <CollapsibleTrigger className="flex items-center justify-between w-full px-3 py-2 text-xs font-semibold text-gray-500">
+                <span>LABELS</span>
+                <ChevronDown
+                  className={cn(
+                    "h-4 w-4 transition-transform duration-200",
+                    openSections.labels ? "transform rotate-180" : "",
+                  )}
+                />
+              </CollapsibleTrigger>
+              <CollapsibleContent className="space-y-1 mt-2">
                 {mailLabels.map((label) => (
                   <Link key={label.href} href={label.href}>
                     <span className="flex items-center rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:border hover:border-gray-200">
@@ -220,26 +353,35 @@ export function MainNav() {
                     </span>
                   </Link>
                 ))}
-              </div>
-            </div>
-
-            <div className="mb-6">
-              <h2 className="px-3 text-xs font-semibold text-gray-500 mb-2">SETTINGS</h2>
-              <div className="space-y-1">
-                <Link href="/settings">
-                  <span className="flex items-center rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:border hover:border-gray-200">
-                    <Settings className="mr-3 h-4 w-4" />
-                    Settings
-                  </span>
-                </Link>
                 <Link href="/mail/manage-labels">
                   <span className="flex items-center rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:border hover:border-gray-200">
                     <Tag className="mr-3 h-4 w-4" />
                     Manage Labels
                   </span>
                 </Link>
-              </div>
-            </div>
+              </CollapsibleContent>
+            </Collapsible>
+
+            {/* Settings Section */}
+            <Collapsible open={openSections.settings} onOpenChange={() => toggleSection("settings")} className="mb-2">
+              <CollapsibleTrigger className="flex items-center justify-between w-full px-3 py-2 text-xs font-semibold text-gray-500">
+                <span>SETTINGS</span>
+                <ChevronDown
+                  className={cn(
+                    "h-4 w-4 transition-transform duration-200",
+                    openSections.settings ? "transform rotate-180" : "",
+                  )}
+                />
+              </CollapsibleTrigger>
+              <CollapsibleContent className="space-y-1 mt-2">
+                <Link href="/settings">
+                  <span className="flex items-center rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:border hover:border-gray-200">
+                    <Settings className="mr-3 h-4 w-4" />
+                    Settings
+                  </span>
+                </Link>
+              </CollapsibleContent>
+            </Collapsible>
           </div>
         </ScrollArea>
 

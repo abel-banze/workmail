@@ -101,7 +101,7 @@ export default function InboxPage() {
     <>
         <EmailList emails={emails} onSelectEmail={handleSelectEmail} isLoading={isLoading} />
         <EmailDetail email={selectedEmail} />
-        <ContactList />
+        
     </>
   )
 }

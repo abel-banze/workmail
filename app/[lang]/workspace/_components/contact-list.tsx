@@ -137,7 +137,7 @@ export function ContactList() {
     : []
 
   return (
-    <div className="w-[280px] border-l flex flex-col h-full">
+    <div className="w-[280px] border-r flex flex-col h-full">
       <div className="p-4 border-b">
         <h2 className="text-lg font-semibold mb-3">Contacts</h2>
         <div className="relative mb-3">
